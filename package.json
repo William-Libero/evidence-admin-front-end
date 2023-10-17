@@ -29,12 +29,11 @@
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "universal-cookie": "^5.0.0",
-    "web-vitals": "^2.1.4",
-    "webpack": "^5.89.0"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "serve -s build",
-    "build": "react-scripts --process.env.PORT --max_old_space_size=4096 build",
+    "start": "node server.js",
+    "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -58,7 +57,7 @@
   },
   "devDependencies": {
     "@types/multer": "^1.4.7",
-    "dotenv": "^16.3.1",
+    "cross-env": "^7.0.3",
     "tailwindcss": "^3.3.3"
   }
 }
