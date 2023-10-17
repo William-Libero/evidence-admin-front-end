@@ -189,7 +189,7 @@ export default function CreateBoard() {
 
   const createNewBoard = async (boardData) => {
     const res = await fetch(
-      "http://localhost:8080/readyToDeliveryBoards/addBoard",
+      "https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/addBoard",
       {
         method: "POST",
         headers: {
@@ -217,7 +217,7 @@ export default function CreateBoard() {
     });
 
     const res = await fetch(
-      "http://localhost:8080/readyToDeliveryBoards/uploadCreatedBoardImgs/" +
+      "https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/uploadCreatedBoardImgs/" +
         insertedBoardId,
       {
         method: "POST",

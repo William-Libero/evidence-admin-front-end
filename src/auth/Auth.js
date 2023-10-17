@@ -38,14 +38,17 @@ export default function Auth() {
       rememberUser: rememberUser.current.checked,
     };
 
-    const res = await fetch("http://localhost:8080/auth/login", {
-      method: "POST",
-      body: JSON.stringify(authData),
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res = await fetch(
+      "https://evidence-admin-8511888fbf4d.herokuapp.com/auth/login",
+      {
+        method: "POST",
+        body: JSON.stringify(authData),
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     var response = await res.json();
     if (!response.ok) {
       return { isError: true, message: "Não foi possível efetuar login." };
@@ -67,7 +70,7 @@ export default function Auth() {
   //       rememberUser: rememberUser.current.checked,
   //     };
 
-  //     const response = await fetch("http://localhost:8080/auth/login", {
+  //     const response = await fetch("https://evidence-admin-8511888fbf4d.herokuapp.com/auth/login", {
   //       method: "POST",
   //       body: JSON.stringify(authData),
   //       mode: "cors",

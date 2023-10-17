@@ -79,7 +79,8 @@ export default function UpdateBoard() {
     const getBoard = async () => {
       try {
         const res = await fetch(
-          "http://localhost:8080/readyToDeliveryBoards/board/" + boardId,
+          "https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/board/" +
+            boardId,
           {
             method: "GET",
             mode: "cors",
@@ -243,7 +244,7 @@ export default function UpdateBoard() {
   const updateBoard = async (boardData) => {
     try {
       const res = await fetch(
-        "http://localhost:8080/readyToDeliveryBoards/editBoard",
+        "https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/editBoard",
         {
           method: "PATCH",
           headers: {
@@ -278,7 +279,7 @@ export default function UpdateBoard() {
       });
 
       const res = await fetch(
-        "http://localhost:8080/readyToDeliveryBoards/uploadCreatedBoardImgs/" +
+        "https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/uploadCreatedBoardImgs/" +
           updatedBoardId,
         {
           method: "POST",

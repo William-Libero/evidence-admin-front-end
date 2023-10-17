@@ -22,7 +22,7 @@ export default function ReadyToDeliveryBoards() {
   useEffect(() => {
     const getAllBoards = async () => {
       const res = await fetch(
-        "http://localhost:8080/readyToDeliveryBoards/boards",
+        "https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/boards",
         {
           method: "GET",
           mode: "cors",
@@ -59,7 +59,7 @@ export default function ReadyToDeliveryBoards() {
   const deleteBoard = async (event, boardId) => {
     event.preventDefault();
     const res = await fetch(
-      `http://localhost:8080/readyToDeliveryBoards/deleteBoard/${boardId}`,
+      `https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/deleteBoard/${boardId}`,
       {
         method: "DELETE",
         headers: {
