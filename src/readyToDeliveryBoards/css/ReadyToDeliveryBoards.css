@@ -1,0 +1,89 @@
+.card-text {
+  margin-bottom: 0.5rem !important;
+}
+
+.create-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 16% !important;
+  background-color: #078add;
+  color: white;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 1s;
+  font-size: 1.1em;
+}
+
+.create-btn a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.create-btn:hover {
+  background-color: #0470b5;
+}
+
+.edit-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #0836c1;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 1s;
+}
+
+.edit-btn:hover {
+  background-color: #2f7ae5;
+}
+
+.delete-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #dd0525;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 1s;
+}
+
+.delete-btn:hover {
+  background-color: #f90b31;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px !important;
+  width: 100%;
+}
+
+li {
+  width: 25%;
+  float: left;
+  clear: right;
+  margin: 0px 10px;
+}
+
+.board-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+.active {
+  text-decoration: underline !important;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh !important;
+  z-index: 100;
+  padding: 20px !important;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f8f9fa;
+  width: 12%;
+}
+
+.evidence-logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logoLink {
+  padding: 0px !important;
+}
+
+.sidebar-link {
+  font-weight: 500 !important;
+  color: black !important;
+  font-family: "Inter" !important;
+  display: flex !important;
+  align-items: center;
+  text-decoration: none;
+}
+
+.container-logout-btn {
+  width: 100%;
+}
+
+.sidebar-logout-btn {
+  padding: 5px;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-size: 1.1em !important;
+  color: white !important;
+  font-family: "Inter" !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fa1c22 !important;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 1s !important;
+}
+
+.sidebar-logout-btn:hover {
+  background-color: #fa504a !important;
+}
+
+.sidebar-link svg {
+  margin-right: 7px;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline !important;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh !important;
+  width: 100vw;
+  margin-left: -1rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}

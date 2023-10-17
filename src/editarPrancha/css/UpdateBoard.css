@@ -1,0 +1,43 @@
+.updateBoardContainer {
+  padding-left: 15% !important;
+  padding-right: 3% !important;
+}
+
+.dialog-loader {
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 102;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border-radius: 10px;
+  backdrop-filter: contrast(0.5);
+  width: 30%;
+}
+
+.dialog-loader-container {
+  width: 100%;
+}
+
+.board-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 49px;
+}
+
+.suport-link {
+  color: white;
+}
+
+.MuiMenuItem-root {
+  width: 100%;
+}
