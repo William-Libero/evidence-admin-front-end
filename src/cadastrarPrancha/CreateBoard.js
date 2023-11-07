@@ -100,7 +100,6 @@ export default function CreateBoard() {
 
       case "type":
         if (event !== "" && event !== undefined) {
-          console.log(event);
           handleChange(event);
           setBoardTypeValidate(true);
         } else {
@@ -178,7 +177,6 @@ export default function CreateBoard() {
 
     result.forEach((data) => {
       if (data[1] === "" || data[1] === undefined || data[1] === null) {
-        console.log(data[1], data[0]);
         validateForm(data[1], data[0]);
         isFormValidated = false;
       }
@@ -228,8 +226,7 @@ export default function CreateBoard() {
         body: formDataImages,
       }
     );
-    var response = await res.json();
-    console.log(response);
+    await res.json();
     setLoading(false);
     setOpenUpdatedBoardSuccessMessage(true);
     setSnackSuccessMessage("Prancha criada com sucesso!");

@@ -1,6 +1,6 @@
 {
   "name": "evidence-admin-front-end",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "engines": {
     "node": "16.18.0"
   },
@@ -32,6 +32,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "startdev": "react-scripts start",
     "start": "node server.js",
     "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",

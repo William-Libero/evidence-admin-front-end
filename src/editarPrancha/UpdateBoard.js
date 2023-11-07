@@ -119,7 +119,6 @@ export default function UpdateBoard() {
           imgsArray.push(value);
         }
       }
-      console.log(imgsArray);
       setBoardImgs(imgsArray);
     }
   };
@@ -290,9 +289,7 @@ export default function UpdateBoard() {
           body: formDataImages,
         }
       );
-      console.log(res);
       if (await res.json()) {
-        console.log("await");
         setTimeout(() => {
           setUpdateCurrentBoard(!updateCurrentBoard);
           setOpenUpdatedBoardSuccessMessage(true);
