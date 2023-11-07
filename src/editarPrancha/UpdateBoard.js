@@ -242,7 +242,7 @@ export default function UpdateBoard() {
   const updateBoard = async (boardData) => {
     try {
       const res = await fetch(
-        "http://localhost:8080/readyToDeliveryBoards/editBoard",
+        "https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/editBoard",
         {
           method: "PATCH",
           headers: {
