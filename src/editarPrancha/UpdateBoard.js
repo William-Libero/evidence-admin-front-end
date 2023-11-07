@@ -221,7 +221,6 @@ export default function UpdateBoard() {
     var isFormValidated = true;
     const boardData = {
       id: boardId,
-      img: "null",
       type: boardType,
       size: boardSize,
       width: boardWidth,
@@ -243,7 +242,7 @@ export default function UpdateBoard() {
   const updateBoard = async (boardData) => {
     try {
       const res = await fetch(
-        "https://evidence-admin-8511888fbf4d.herokuapp.com/readyToDeliveryBoards/editBoard",
+        "http://localhost:8080/readyToDeliveryBoards/editBoard",
         {
           method: "PATCH",
           headers: {
