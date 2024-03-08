@@ -98,16 +98,17 @@ export default function Auth() {
         <img src={logo} alt="evidence-logo" />
         <Row>
           <Col lg="6" style={{ display: "flex", flexFlow: "column" }}>
-            <Button variant="light" className="githubButton">
-              <FaSquareGithub className="githubIcon" />
-              <a
-                href="https://github.com/William-Libero/evidence-admin-front-end"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-            </Button>
+            <a
+              className="githubButtonLink"
+              href="https://github.com/William-Libero/evidence-admin-front-end"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button variant="light" className="githubButton">
+                <FaSquareGithub className="githubIcon" />
+                <span>GitHub</span>
+              </Button>
+            </a>
             <Card>
               <Card.Body>
                 <Form onSubmit={authenticatesUser}>
