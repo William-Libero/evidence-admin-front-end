@@ -9,6 +9,7 @@ import logo from "../assets/img/logo-site2.png";
 import Cookies from "universal-cookie";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaSquareGithub } from "react-icons/fa6";
 
 export default function Auth() {
   const navigate = useNavigate();
@@ -96,7 +97,17 @@ export default function Auth() {
       <Container>
         <img src={logo} alt="evidence-logo" />
         <Row>
-          <Col lg="6">
+          <Col lg="6" style={{ display: "flex", flexFlow: "column" }}>
+            <Button variant="light" className="githubButton">
+              <FaSquareGithub className="githubIcon" />
+              <a
+                href="https://github.com/William-Libero/evidence-admin-front-end"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </Button>
             <Card>
               <Card.Body>
                 <Form onSubmit={authenticatesUser}>
