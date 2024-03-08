@@ -6,6 +6,7 @@ import Auth from "./auth/Auth";
 import Dashboard from "./dashboard/Dashboard";
 import CreateBoard from "./cadastrarPrancha/CreateBoard";
 import UpdateBoard from "./editarPrancha/UpdateBoard";
+import EvidenceAdmin from "./evidenceAdmin/EvidenceAdmin";
 import AuthGuard from "./guards/Auth";
 import Cookies from "universal-cookie";
 import ReadyToDeliveryBoards from "./readyToDeliveryBoards/ReadyToDeliveryBoards";
@@ -96,11 +97,11 @@ const router = createBrowserRouter([
               </AuthGuard>
             ),
           },
-          // { path: ":eventId", element: <EventDetailPage /> },
           // { path: "new", element: <NewEventPage /> },
           // { path: ":eventId/edit", element: <EditEventPage /> },
         ],
       },
+      { path: "evidenceAdmin", element: <EvidenceAdmin /> },
     ],
   },
 ]);
